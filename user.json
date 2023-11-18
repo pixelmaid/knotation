@@ -1,0 +1,33 @@
+{
+  "theme": "Default",
+  "currentGraph": "genSketch",
+  "editorTheme": "Community Material Theme High Contrast",
+  "editorTabSize": 2,
+  "editorFontSize": 12,
+  "editorMinimap": true,
+  "editorWordWrap": "off",
+  "editorWordWrapColumn": 80,
+  "hideFullscreenGui": false,
+  "graphMetadata": {
+    "genSketch": {
+      "offset": [
+        -455.8123299051827,
+        210.9122672940362
+      ],
+      "zoomLevel": 0.6734395323083027,
+      "sceneRatio": 0.7495580436063641,
+      "canvasRatio": 0.4415288077581289,
+      "layout": "default"
+    },
+    "Knotation": {
+      "offset": [
+        -289.2665106172357,
+        397.6758085023039
+      ],
+      "zoomLevel": 0.8655198127651021,
+      "sceneRatio": 0.5045263498221791,
+      "canvasRatio": 0.48565840938722293,
+      "layout": "default"
+    }
+  }
+}

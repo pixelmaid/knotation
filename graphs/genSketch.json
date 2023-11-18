@@ -1,0 +1,2145 @@
+{
+  "id": "20be2e60-1547-11ee-a121-d1e46357b5df",
+  "version": "1.0.0-beta.2",
+  "name": "genSketch",
+  "nodes": [
+    {
+      "id": "Gy0iFTHFg",
+      "name": "Canvas",
+      "x": 236,
+      "y": -703,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "In5spAQGlB",
+      "name": "Color Presets ",
+      "x": 236,
+      "y": -628,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "Gy0iFTHFg",
+            "port": "out"
+          }
+        },
+        {
+          "name": "background color",
+          "public": true,
+          "value": [
+            0.1411764705882353,
+            0.1411764705882353,
+            0.1411764705882353,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1o5TIX2-g",
+      "name": "Select Motif",
+      "x": 1308,
+      "y": -1016,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "motif options",
+          "value": "diamond"
+        }
+      ]
+    },
+    {
+      "id": "yEwOYnUEn",
+      "name": "Knot",
+      "x": -487,
+      "y": -1250,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "28rOWDUqD",
+      "name": "Chain",
+      "x": -487,
+      "y": -1205,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "ykhQWXNuv",
+      "name": "Motif",
+      "x": -487,
+      "y": -1160,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "wNT8qMKDL",
+      "name": "Arrowhead",
+      "x": 1009,
+      "y": -1115,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 1
+        },
+        {
+          "name": "pattern position y",
+          "value": 191
+        },
+        {
+          "name": "#forward knots",
+          "value": 1
+        },
+        {
+          "name": "#backward knots",
+          "value": 9
+        },
+        {
+          "name": "forward color",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "backward color",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WYf0MvKQQ",
+      "name": "Diamond",
+      "x": 762,
+      "y": -382,
+      "templateName": "Diamond",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "In5spAQGlB",
+            "port": "out"
+          }
+        },
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 7
+        },
+        {
+          "name": "vertial repeat",
+          "value": 3
+        },
+        {
+          "name": "vertical overlap",
+          "value": false
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 2
+        },
+        {
+          "name": "horizontal overlap",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "rNx6C8IyH",
+      "name": "Heart",
+      "x": 1315,
+      "y": -720,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "0nY5UXdp3",
+      "name": "Dovetail",
+      "x": 984,
+      "y": -307,
+      "templateName": "Dovetail",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "In5spAQGlB",
+            "port": "out"
+          }
+        },
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 7
+        },
+        {
+          "name": "vertical repeat",
+          "value": 7
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "mNKxeAVd8",
+      "name": "Waves",
+      "x": 1310,
+      "y": -1161,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "1rCV961qM",
+      "name": "Draw",
+      "x": 323,
+      "y": 266,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "bZrDOeHQO",
+            "port": "out"
+          }
+        },
+        {
+          "name": "move left/right",
+          "public": true,
+          "value": 40
+        },
+        {
+          "name": "move up/down",
+          "public": true,
+          "value": 120
+        },
+        {
+          "name": "display size",
+          "public": true,
+          "value": 18
+        },
+        {
+          "name": "toggle knot type",
+          "public": true,
+          "value": true
+        },
+        {
+          "name": "toggle base threads",
+          "public": true,
+          "value": true
+        },
+        {
+          "name": "toggle thread index",
+          "public": true,
+          "value": true
+        },
+        {
+          "name": "toggle grid",
+          "public": true,
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "3sGhOHi76",
+      "name": "Export Encodings",
+      "x": 179,
+      "y": 443,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "1rCV961qM",
+            "port": "out"
+          }
+        },
+        {
+          "name": "Export Pattern Encodings"
+        }
+      ]
+    },
+    {
+      "id": "aeJSs4ure",
+      "name": "Save Image",
+      "x": 281,
+      "y": 355,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "1rCV961qM",
+            "port": "out"
+          }
+        },
+        {
+          "name": "Save Image",
+          "public": true
+        }
+      ]
+    },
+    {
+      "id": "kX3ndxJIJ",
+      "name": "Chevron_deprecated",
+      "x": 1309,
+      "y": -969,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 66
+        },
+        {
+          "name": "pattern position y",
+          "value": 116
+        },
+        {
+          "name": "#forward",
+          "value": 4
+        },
+        {
+          "name": "#backward",
+          "value": 4
+        },
+        {
+          "name": "forward color",
+          "value": [
+            0.2196078431372549,
+            0.5254901960784314,
+            0.7607843137254902,
+            1
+          ]
+        },
+        {
+          "name": "backward color",
+          "value": [
+            0.5490196078431373,
+            0.30196078431372547,
+            0.796078431372549,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fBANOHyOe",
+      "name": "Diamond_deprecated",
+      "x": 1311,
+      "y": -922,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 56
+        },
+        {
+          "name": "pattern position y",
+          "value": 76
+        },
+        {
+          "name": "larger diamond N",
+          "value": 9
+        },
+        {
+          "name": "color 0",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 1",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 2",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 3",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 4",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 5",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 6",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 7",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 8",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "YNe9N6rKl",
+      "name": "Dovetail_deprecated",
+      "x": 1311,
+      "y": -840,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 50
+        },
+        {
+          "name": "pattern position y",
+          "value": 50
+        },
+        {
+          "name": "dimensions",
+          "value": 7
+        },
+        {
+          "name": "color 0",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 1",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 2",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 3",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 4",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 5",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 6",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giCZDxACp",
+      "name": "Mirror axis-",
+      "x": 1010,
+      "y": -1060,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "gAbmcqqPs",
+      "name": "Candy Strip",
+      "x": -131,
+      "y": -487,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "#forward",
+          "value": 2
+        },
+        {
+          "name": "#backward",
+          "value": 1
+        },
+        {
+          "name": "vertical repetition",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "BRLCAOQ6m",
+      "name": "Diamond",
+      "x": -128,
+      "y": -397,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 4
+        },
+        {
+          "name": "vertial repeat",
+          "value": 3
+        },
+        {
+          "name": "vertical overlap",
+          "value": false
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 3
+        },
+        {
+          "name": "horizontal overlap",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "nwRl5Yq8U",
+      "name": "Dovetail w- diamond tiling ",
+      "x": 1312,
+      "y": -880,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 30
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 7
+        },
+        {
+          "name": "vertial repeat",
+          "value": 3
+        },
+        {
+          "name": "vertical overlap",
+          "value": false
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 3
+        },
+        {
+          "name": "horizontal overlap",
+          "value": false
+        },
+        {
+          "name": "color 0",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 1",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 2",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 3",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 4",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 5",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 6",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2cdEj3EEo",
+      "name": "Dovetail",
+      "x": -128,
+      "y": -352,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 50
+        },
+        {
+          "name": "pattern position y",
+          "value": 50
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 7
+        },
+        {
+          "name": "vertical repeat",
+          "value": 3
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "-djFf7pwL",
+      "name": "Diamond",
+      "x": 1400,
+      "y": -591,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "dimensions (n x n)",
+          "value": 4
+        },
+        {
+          "name": "vertial repeat",
+          "value": 2
+        },
+        {
+          "name": "vertical overlap",
+          "value": false
+        },
+        {
+          "name": "horizontal repeat",
+          "value": 2
+        },
+        {
+          "name": "horizontal overlap",
+          "value": true
+        },
+        {
+          "name": "color 0",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 1",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 2",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 3",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oKDjLy2TME",
+      "name": "Chevron_hrep",
+      "x": 1388,
+      "y": -441,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "-djFf7pwL",
+            "port": "out"
+          }
+        },
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 520
+        },
+        {
+          "name": "#forward",
+          "value": 4
+        },
+        {
+          "name": "vertical repetition",
+          "value": 7
+        },
+        {
+          "name": "horizontal repetition",
+          "value": 2
+        },
+        {
+          "name": "color 0",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 1",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 2",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 3",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 4",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 5",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 6",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "color 7",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s0buJiqi8",
+      "name": "Chevron",
+      "x": 348,
+      "y": -371,
+      "templateName": "Chevron",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "In5spAQGlB",
+            "port": "out"
+          }
+        },
+        {
+          "name": "#forward knots",
+          "value": 6
+        },
+        {
+          "name": "vertical repetition",
+          "value": 10
+        },
+        {
+          "name": "horizontal repetition",
+          "value": 3
+        },
+        {
+          "name": "user defined colors",
+          "value": "\n"
+        }
+      ]
+    },
+    {
+      "id": "_0hdYfa7d",
+      "name": "Colors",
+      "x": 393,
+      "y": -275,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "s0buJiqi8",
+            "port": "out"
+          }
+        },
+        {
+          "name": "thread number",
+          "value": 5
+        },
+        {
+          "name": "color",
+          "value": [
+            0.12941176470588237,
+            0.1568627450980392,
+            0.5294117647058824,
+            1
+          ]
+        },
+        {
+          "name": "symmetric",
+          "value": false
+        },
+        {
+          "name": "Activate Module",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "uwzB3N-Fi",
+      "name": "Modify Column",
+      "x": 388,
+      "y": -124,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "column #",
+          "value": 4
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "3d1uvmQXg",
+      "name": "Modify Column",
+      "x": -127,
+      "y": -186,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "column #",
+          "value": 4
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "U0IKMoK1Y",
+      "name": "Modify Row",
+      "x": 396,
+      "y": -62,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "uwzB3N-Fi",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 9
+        },
+        {
+          "name": "change knots to",
+          "value": "fb"
+        },
+        {
+          "name": "Activate Module",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "rUwTV8_fn",
+      "name": "Modify Row",
+      "x": -127,
+      "y": -141,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "row #",
+          "value": 5
+        },
+        {
+          "name": "change knots to",
+          "value": "fb"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "FIUVJZSsU",
+      "name": "Modify Knots _deprecated",
+      "x": 1311,
+      "y": -799,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "change knots in",
+          "value": "column"
+        },
+        {
+          "name": "column #",
+          "value": 0
+        },
+        {
+          "name": "row #",
+          "value": 0
+        },
+        {
+          "name": "change knots to",
+          "value": "bf"
+        }
+      ]
+    },
+    {
+      "id": "Ezm_B5Cmc",
+      "name": "Colors",
+      "x": -127,
+      "y": -96,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "thread number",
+          "value": 5
+        },
+        {
+          "name": "color",
+          "value": [
+            0.8823529411764706,
+            0.9098039215686274,
+            0.47058823529411764,
+            1
+          ]
+        },
+        {
+          "name": "symmetric",
+          "value": true
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "IYQ_4LAIG",
+      "name": "Colors",
+      "x": 397,
+      "y": -201,
+      "templateName": "Colors",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "_0hdYfa7d",
+            "port": "out"
+          }
+        },
+        {
+          "name": "thread number",
+          "value": 20
+        },
+        {
+          "name": "color",
+          "value": [
+            0.1568627450980392,
+            0.4666666666666667,
+            0.17647058823529413,
+            1
+          ]
+        },
+        {
+          "name": "symmetric",
+          "value": true
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "75It1T2AR",
+      "name": "Chevron",
+      "x": -127,
+      "y": -442,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "#forward",
+          "value": 6
+        },
+        {
+          "name": "vertical repetition",
+          "value": 7
+        },
+        {
+          "name": "horizontal repetition",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "DHccEWyWW",
+      "name": "Modify Column",
+      "x": 167,
+      "y": -200,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "column #",
+          "value": 3
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "rIvAObcHj",
+      "name": "Colors_deprecated",
+      "x": 1312,
+      "y": -758,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "thread number",
+          "value": 5
+        },
+        {
+          "name": "color",
+          "value": [
+            0.5176470588235295,
+            0.5490196078431373,
+            0.09411764705882353,
+            1
+          ]
+        },
+        {
+          "name": "symmetric",
+          "value": true
+        },
+        {
+          "name": "numColors"
+        }
+      ]
+    },
+    {
+      "id": "o_c1V3qqp",
+      "name": "Modify Column",
+      "x": 1016,
+      "y": -220,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "0nY5UXdp3",
+            "port": "out"
+          }
+        },
+        {
+          "name": "column #",
+          "value": 6
+        },
+        {
+          "name": "change knots to",
+          "value": "bf"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "EWRbPUFdX",
+      "name": "Chevron",
+      "x": 597,
+      "y": -351,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "In5spAQGlB",
+            "port": "out"
+          }
+        },
+        {
+          "name": "#forward",
+          "value": 7
+        },
+        {
+          "name": "vertical repetition",
+          "value": 20
+        },
+        {
+          "name": "horizontal repetition",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "ML2yHuUDZ",
+      "name": "Modify Column",
+      "x": 590,
+      "y": -288,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "EWRbPUFdX",
+            "port": "out"
+          }
+        },
+        {
+          "name": "column #",
+          "value": 3
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "YcaFvBg4r",
+      "name": "Modify Column",
+      "x": 605,
+      "y": -190,
+      "templateName": "Modify Column",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "ML2yHuUDZ",
+            "port": "out"
+          }
+        },
+        {
+          "name": "column #",
+          "value": 9
+        },
+        {
+          "name": "change knots to",
+          "value": "f"
+        },
+        {
+          "name": "symmetric",
+          "value": true
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "0jm7mEBZ8",
+      "name": "Modify Row",
+      "x": 770,
+      "y": -303,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "WYf0MvKQQ",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 6
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "tiXeIn-yb",
+      "name": "Modify Row",
+      "x": 746,
+      "y": -230,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "0jm7mEBZ8",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 13
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "t85coom0a",
+      "name": "Modify Row",
+      "x": 748,
+      "y": -185,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "tiXeIn-yb",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 20
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ZUxEbqm2N",
+      "name": "Modify Row",
+      "x": 746,
+      "y": -135,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "t85coom0a",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 34
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "jPWKauftR",
+      "name": "Modify Row",
+      "x": 744,
+      "y": -90,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "ZUxEbqm2N",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 41
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "73ZhPs_rt",
+      "name": "Modify Row",
+      "x": 749,
+      "y": -35,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jPWKauftR",
+            "port": "out"
+          }
+        },
+        {
+          "name": "row #",
+          "value": 48
+        },
+        {
+          "name": "change knots to",
+          "value": "b"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "bZrDOeHQO",
+      "name": "Modify Column",
+      "x": 1019,
+      "y": -116,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "o_c1V3qqp",
+            "port": "out"
+          }
+        },
+        {
+          "name": "column #",
+          "value": 30
+        },
+        {
+          "name": "change knots to",
+          "value": "fb"
+        },
+        {
+          "name": "Activate Module",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "orhLDVKhy",
+      "name": "Candy Strip",
+      "x": 162,
+      "y": -370,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "In5spAQGlB",
+            "port": "out"
+          }
+        },
+        {
+          "name": "pattern position x",
+          "value": 40
+        },
+        {
+          "name": "pattern position y",
+          "value": 40
+        },
+        {
+          "name": "#forward",
+          "value": 3
+        },
+        {
+          "name": "#backward",
+          "value": 3
+        },
+        {
+          "name": "vertical repetition",
+          "value": 5
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "wvkBd07qf",
+      "x": -520,
+      "y": -1298,
+      "width": 200,
+      "height": 200,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Classes",
+      "collapseFlags": {}
+    },
+    {
+      "id": "kvF1FvrKE",
+      "x": -149,
+      "y": -562,
+      "width": 200,
+      "height": 300,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Parameterized Motifs",
+      "collapseFlags": {}
+    },
+    {
+      "id": "hsiFXH_gC",
+      "x": 172,
+      "y": -751,
+      "width": 200,
+      "height": 0,
+      "fontSize": 16,
+      "backgroundColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Canvas Preparations",
+      "collapseFlags": {}
+    },
+    {
+      "id": "6ImEuiAJU",
+      "x": 990,
+      "y": -1228,
+      "width": 200,
+      "height": 200,
+      "fontSize": 14,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Next todos:\nin-progress:\n- make different motif modules connectable",
+      "collapseFlags": {}
+    },
+    {
+      "id": "ZlOmKGFHa",
+      "x": 163,
+      "y": 170,
+      "width": 150,
+      "height": 0,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Output & Export ",
+      "collapseFlags": {
+        "backgroundColor": true
+      }
+    },
+    {
+      "id": "Kdx0qYFo1",
+      "x": 1292,
+      "y": -1197,
+      "width": 200,
+      "height": 100,
+      "fontSize": 14,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "maybe/optional",
+      "collapseFlags": {}
+    },
+    {
+      "id": "ivcJV3gWc",
+      "x": 174,
+      "y": -546,
+      "width": 150,
+      "height": 0,
+      "fontSize": 16,
+      "backgroundColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "textColor": [
+        0.6980392156862745,
+        0.6980392156862745,
+        0.6980392156862745,
+        1
+      ],
+      "text": "Design Space",
+      "collapseFlags": {}
+    },
+    {
+      "id": "bF5HxCLD9",
+      "x": 1288,
+      "y": -1072,
+      "width": 200,
+      "height": 400,
+      "fontSize": 14,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "prev versions\n ",
+      "collapseFlags": {}
+    },
+    {
+      "id": "WIOKaNQ7s",
+      "x": -143,
+      "y": -225,
+      "width": 200,
+      "height": 300,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Modifiers",
+      "collapseFlags": {}
+    },
+    {
+      "id": "RwzIYwxCk",
+      "x": -197,
+      "y": -943,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.7607843137254902,
+        0,
+        0,
+        1
+      ],
+      "textColor": [
+        1,
+        0.8784313725490196,
+        0.8784313725490196,
+        1
+      ],
+      "text": "red",
+      "collapseFlags": {}
+    },
+    {
+      "id": "XjQzedu6N",
+      "x": -137,
+      "y": -943,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.9372549019607843,
+        0.2980392156862745,
+        0,
+        1
+      ],
+      "textColor": [
+        0.9254901960784314,
+        0.8235294117647058,
+        0.7725490196078432,
+        1
+      ],
+      "text": "orange",
+      "collapseFlags": {}
+    },
+    {
+      "id": "MtBsJlFfo",
+      "x": -77,
+      "y": -943,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        1,
+        0.7843137254901961,
+        0.27450980392156865,
+        1
+      ],
+      "textColor": [
+        0.32941176470588235,
+        0.25882352941176473,
+        0.09019607843137255,
+        1
+      ],
+      "text": "yellow",
+      "collapseFlags": {}
+    },
+    {
+      "id": "ZHsmYExBg",
+      "x": -17,
+      "y": -943,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        1,
+        0.9137254901960784,
+        0.21176470588235294,
+        1
+      ],
+      "textColor": [
+        0.3411764705882353,
+        0.30980392156862746,
+        0.0784313725490196,
+        1
+      ],
+      "text": "eggyolk",
+      "collapseFlags": {}
+    },
+    {
+      "id": "D-TPcWjla",
+      "x": -257,
+      "y": -943,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.3333333333333333,
+        0.043137254901960784,
+        0,
+        1
+      ],
+      "textColor": [
+        1,
+        0.792156862745098,
+        0.7607843137254902,
+        1
+      ],
+      "text": "wine",
+      "collapseFlags": {}
+    },
+    {
+      "id": "e3eGxvzXF",
+      "x": -17,
+      "y": -883,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.7490196078431373,
+        0.8196078431372549,
+        0.24705882352941178,
+        1
+      ],
+      "textColor": [
+        0.27058823529411763,
+        0.29411764705882354,
+        0.08627450980392157,
+        1
+      ],
+      "text": "matcha",
+      "collapseFlags": {}
+    },
+    {
+      "id": "mvdn0BqKI",
+      "x": -77,
+      "y": -883,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.23529411764705882,
+        0.5490196078431373,
+        0.09803921568627451,
+        1
+      ],
+      "textColor": [
+        0.06666666666666667,
+        0.15294117647058825,
+        0.027450980392156862,
+        1
+      ],
+      "text": "green\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "ZQ1xh2PTz",
+      "x": -17,
+      "y": -823,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.36470588235294116,
+        0.4392156862745098,
+        0.6705882352941176,
+        1
+      ],
+      "textColor": [
+        0.0784313725490196,
+        0.09411764705882353,
+        0.1411764705882353,
+        1
+      ],
+      "text": "blue\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "suWEtVb22",
+      "x": -77,
+      "y": -823,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.2,
+        0.20784313725490197,
+        0.5686274509803921,
+        1
+      ],
+      "textColor": [
+        0.8156862745098039,
+        0.8196078431372549,
+        0.9647058823529412,
+        1
+      ],
+      "text": "indigo\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "TtSkCqUw_",
+      "x": -137,
+      "y": -823,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.6235294117647059,
+        0.21568627450980393,
+        0.5294117647058824,
+        1
+      ],
+      "textColor": [
+        1,
+        0.7215686274509804,
+        0.9333333333333333,
+        1
+      ],
+      "text": "purple",
+      "collapseFlags": {}
+    },
+    {
+      "id": "Z2JAA7N9N",
+      "x": -17,
+      "y": -763,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        1,
+        0.7019607843137254,
+        0.6431372549019608,
+        1
+      ],
+      "textColor": [
+        0.43529411764705883,
+        0.22745098039215686,
+        0.1843137254901961,
+        1
+      ],
+      "text": "blush\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "RE2_Kr2ms",
+      "x": -77,
+      "y": -763,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        1,
+        0.3843137254901961,
+        0.5450980392156862,
+        1
+      ],
+      "textColor": [
+        1,
+        0.9411764705882353,
+        0.9568627450980393,
+        1
+      ],
+      "text": "pink\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "4FGAalE9U",
+      "x": -77,
+      "y": -703,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.3215686274509804,
+        0.24705882352941178,
+        0.08627450980392157,
+        1
+      ],
+      "textColor": [
+        0.8235294117647058,
+        0.7333333333333333,
+        0.6039215686274509,
+        1
+      ],
+      "text": "tea\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "yHEK2WYmS",
+      "x": -17,
+      "y": -703,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0.8235294117647058,
+        0.7333333333333333,
+        0.6039215686274509,
+        1
+      ],
+      "textColor": [
+        0.3215686274509804,
+        0.24705882352941178,
+        0.08627450980392157,
+        1
+      ],
+      "text": "beige",
+      "collapseFlags": {}
+    },
+    {
+      "id": "QvVUvj0rD",
+      "x": -17,
+      "y": -643,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "textColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "text": "white",
+      "collapseFlags": {}
+    },
+    {
+      "id": "rlhqAwqxp",
+      "x": -78,
+      "y": -643,
+      "width": 50,
+      "height": 50,
+      "fontSize": 12,
+      "backgroundColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "textColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "text": "black",
+      "collapseFlags": {}
+    }
+  ]
+}

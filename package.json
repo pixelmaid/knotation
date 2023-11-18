@@ -1,0 +1,12 @@
+{
+  "name": "patternGenerator",
+  "description": "New empty project",
+  "private": true,
+  "dependencies": {
+    "canvas-screenshot": "^4.1.0",
+    "file-saver": "^2.0.5",
+    "pex-color": "^1.1.1",
+    "pex-random": "^1.0.1",
+    "rainbowvis.js": "^1.1.1"
+  }
+}
